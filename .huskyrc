@@ -1,6 +1,7 @@
 {
   "hooks": {
     "commit-msg": "commitlint -e $GIT_PARAMS",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "pre-push": "leasot -x --reporter markdown --ignore '**/node_modules/**' '**/*' > TODO.md ; git add TODO.md ; git commit -m 'chore: update TODO'"
   }
 }

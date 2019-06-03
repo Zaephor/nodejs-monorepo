@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "batch-update": "lerna exec 'ncu -u'",
+    "batch-update": "lerna exec --parallel 'ncu -u'",
     "commit": "commit",
     "pretest": "standard",
     "postinstall": "lerna bootstrap --hoist",
@@ -15,6 +15,7 @@
     "@commitlint/prompt-cli": "^8.0.0",
     "husky": "latest",
     "jest": "latest",
+    "leasot": "^7.3.4",
     "lerna": "^3.14.1",
     "lint-staged": "^8.1.7",
     "npm-check-updates": "^3.1.10",
