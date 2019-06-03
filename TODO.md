@@ -1,0 +1,1 @@
+✖ Filetype .json is unsupported.
