@@ -3,9 +3,10 @@
   "private": true,
   "scripts": {
     "batch-update": "lerna exec --parallel 'ncu -u'",
+    "build:todo": "leasot -x --reporter markdown --ignore '**/node_modules/**,**.json' '**/*' > TODO.md && git add TODO.md",
     "commit": "commit",
-    "pretest": "standard",
     "postinstall": "lerna bootstrap --hoist",
+    "pretest": "standard",
     "test": "jest"
   },
   "devDependencies": {
