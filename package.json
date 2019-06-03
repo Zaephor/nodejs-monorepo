@@ -1,0 +1,37 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "batch-update": "lerna exec 'ncu -u'",
+    "commit": "commit",
+    "pretest": "standard",
+    "postinstall": "lerna bootstrap --hoist",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/config-lerna-scopes": "^8.0.0",
+    "@commitlint/prompt-cli": "^8.0.0",
+    "husky": "latest",
+    "jest": "latest",
+    "lerna": "^3.14.1",
+    "lint-staged": "^8.1.7",
+    "npm-check-updates": "^3.1.10",
+    "standard": "latest"
+  },
+  "standard": {
+    "ignore": [
+      "**/__tests__/**"
+    ],
+    "globals": [
+      "describe",
+      "test",
+      "beforeAll",
+      "beforeEach",
+      "afterAll",
+      "afterEach",
+      "expect"
+    ]
+  }
+}
