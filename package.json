@@ -17,9 +17,9 @@
     "@commitlint/prompt-cli": "^8.0.0",
     "husky": "latest",
     "jest": "latest",
-    "leasot": "^7.3.4",
-    "lerna": "^3.14.1",
-    "lint-staged": "^8.1.7",
+    "leasot": "^7.4.0",
+    "lerna": "^3.15.0",
+    "lint-staged": "^8.2.0",
     "npm-check-updates": "^3.1.10",
     "standard": "latest"
   },
