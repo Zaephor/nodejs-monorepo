@@ -25,7 +25,8 @@
   },
   "standard": {
     "ignore": [
-      "**/__tests__/**"
+      "**/__tests__/**",
+      "**/test/**"
     ],
     "globals": [
       "describe",
