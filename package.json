@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "batch-update": "lerna exec --parallel 'ncu -u'",
+    "batch-update": "ncu -u && lerna exec --parallel 'ncu -u' && npm install",
     "build:todo": "leasot -x --reporter markdown --ignore '**/node_modules/**,**.json' '**/*' > TODO.md && git add TODO.md",
     "commit": "commit",
     "postinstall": "lerna bootstrap --hoist",
